@@ -7,13 +7,14 @@ implementation of some custom machine learning and deep learning modules and alg
 
 
 ### 1 - Image classifier - CIFAR.ipynb 
-in this notebook i built a convolutional neural network and trained it on CIFAR-10 dataset 
+in this notebook i'll built a convolutional neural network and trained it on CIFAR-10 dataset 
 
 ### 2 - Logistic Regression.ipynb
-in this notebook i build a custom Logistic regression algorithm with softmax instead of sigmoid activation, using Torch tensors and and torch auto-grade and compared it to sklearn's pre-implemented Logistic regression. 
- - both models got similar results in terms or time complexity and training and test accuracy
+in this notebook i'll build a custom Classifire with softmax instead of sigmoid activation, using only Torch tensors. 
 
-**next steps**
-- implementing the same algorithm with no auto grade.
-- implementing the same algorithm with no auto-grade and custom optimazation algorith. 
-- implementing the same algorithm for distuputed preocess.
+**steps**
+- [x] implementing the algorithm with auto-grade and pre-implemeted gradient descent.
+- [x] implementing custom gradient descent. 
+- [x] implementing the algorithm with custom gradient descent.
+
+after comparing the results of the custom GD against the pre-implemented GD, the pre-impelemented GD took nearly twice as much time as the custom GD because it does alot unneeded computation to genralize to a wide range of problems but my algorithm done only useful comutations.
